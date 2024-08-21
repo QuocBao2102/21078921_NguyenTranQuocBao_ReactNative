@@ -7,25 +7,25 @@
     <title>Document</title>
     <script>
         // Data 1
-        let massMark1 = 78; // kg
-        let heightMark1 = 1.69; // meters
-        let massJohn1 = 92; // kg
-        let heightJohn1 = 1.95; // meters
+        let massMark1 = 75;
+        let heightMark1 = 1.70;
+        let massJohn1 = 80;
+        let heightJohn1 = 1.83;
 
         // Data 2
-        let massMark2 = 95; // kg
-        let heightMark2 = 1.88; // meters
-        let massJohn2 = 85; // kg
-        let heightJohn2 = 1.76; // meters
+        let massMark2 = 80;
+        let heightMark2 = 1.80;
+        let massJohn2 = 70;
+        let heightJohn2 = 1.65;
 
-        // Calculate BMI for Data 1
+        // BMI data 1
         let BMIMark1 = massMark1 / (heightMark1 ** 2);
         let BMIJohn1 = massJohn1 / (heightJohn1 ** 2);
 
-        // Calculate BMI for Data 2
+        // BMI data 2
         let BMIMark2 = massMark2 / (heightMark2 ** 2);
         let BMIJohn2 = massJohn2 / (heightJohn2 ** 2);
-        // Function to print the result
+        // if else
         function compareBMI(BMIMark, BMIJohn, dataLabel) {
             if (BMIMark > BMIJohn) {
                 console.log(`${dataLabel}: Mark's BMI (${BMIMark.toFixed(2)}) is higher than John's (${BMIJohn.toFixed(2)})!`);
@@ -36,7 +36,7 @@
             }
         }
 
-        // Print the results for both data sets
+        // Print the results
         compareBMI(BMIMark1, BMIJohn1, 'Data 1');
         compareBMI(BMIMark2, BMIJohn2, 'Data 2');
     </script>
